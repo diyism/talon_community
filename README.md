@@ -2,6 +2,7 @@
     sudo tar -xvf talon-linux.tar.xz -C /opt
     echo -e '#!/usr/bin/env bash\ncd /opt/talon\n./run.sh' | sudo tee /usr/bin/talon
     sudo chmod 755 /usr/bin/talon
+    curl -L https://github.com/diyism/talon_community/raw/refs/heads/main/myboard.talon -o ~/.talon/user/myboard.talon
     talon &
 
     #right click the Talon system tray icon, then select "Install conformer D(2023-05-20)" from the Speech Recognition menu
