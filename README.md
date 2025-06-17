@@ -1,4 +1,4 @@
-    curl -#O https://talonvoice.com/dl/latest/talon-linux.tar.xz
+    curl -#O https://github.com/diyism/talon_community/releases/download/0.4.0/talon-linux.tar.xz
     sudo tar -xvf talon-linux.tar.xz -C /opt
     echo -e '#!/usr/bin/env bash\ncd /opt/talon\n./run.sh' | sudo tee /usr/bin/talon
     sudo chmod 755 /usr/bin/talon
