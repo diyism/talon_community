@@ -1,5 +1,5 @@
     curl -#O https://talonvoice.com/dl/latest/talon-linux.tar.xz
-    tar -xvf talon-linux.tar.xz -C /opt
+    sudo tar -xvf talon-linux.tar.xz -C /opt
     
     echo '#!/usr/bin/env sh
     cd /opt/talon
