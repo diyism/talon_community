@@ -1,3 +1,12 @@
+    curl -#O https://talonvoice.com/dl/latest/talon-linux.tar.xz
+    tar -xvf talon-linux.tar.xz -C /opt
+    
+    echo '#!/usr/bin/env sh
+    cd /opt/talon
+    ./run.sh
+    ' > /usr/bin/talon
+    chmod 755 /usr/bin/talon
+
 # community
 
 Voice command set for [Talon](https://talonvoice.com/), community-supported.
