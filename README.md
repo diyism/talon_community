@@ -1,6 +1,6 @@
     curl -#O https://talonvoice.com/dl/latest/talon-linux.tar.xz
     sudo tar -xvf talon-linux.tar.xz -C /opt
-    echo '#!/usr/bin/env sh\ncd /opt/talon\n./run.sh' | sudo tee /usr/bin/talon
+    echo -e '#!/usr/bin/env bash\ncd /opt/talon\n./run.sh' | sudo tee /usr/bin/talon
     chmod 755 /usr/bin/talon
 
 # community
