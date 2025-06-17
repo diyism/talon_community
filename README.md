@@ -1,11 +1,11 @@
-    curl -#O https://github.com/diyism/talon_community/releases/download/0.4.0/talon-linux.tar.xz
+    curl -#LO https://github.com/diyism/talon_community/releases/download/0.4.0/talon-linux.tar.xz
     sudo tar -xvf talon-linux.tar.xz -C /opt
     echo -e '#!/usr/bin/env bash\ncd /opt/talon\n./run.sh' | sudo tee /usr/bin/talon
     sudo chmod 755 /usr/bin/talon
     talon
     #ctrl+c to stop it
 
-    curl -#O https://github.com/diyism/talon_community/releases/download/0.4.0/dottalon.conformerD_and_db.tar.gz
+    curl -#LO https://github.com/diyism/talon_community/releases/download/0.4.0/dottalon.conformerD_and_db.tar.gz
     tar -zxvf dottalon.conformerD_and_db.tar.gz -C ~/.talon
     curl -L https://github.com/diyism/talon_community/raw/refs/heads/main/myboard.talon -o ~/.talon/user/myboard.talon
     #restart
